@@ -1,4 +1,4 @@
-# CapstoneProjectTemplate /* Replace this line with the title of your project */
+# RothScope
 
 ## **Summary**
 
@@ -6,18 +6,20 @@ Put a very high-level summary of the project.
 
 ## **Team Members**
 
-- Joe Black
-- Joe Pesci
-- Joe Dalton
+- Alli Carr
+- Dustin Muse
+- Gabe Manning
+- Jaydon Buckler
+- Noah King
 
 ## **Client Partner Information**
 
 ### *Company:*
-WHATEVER COMPANY or CORRESPONDENCE
+Moneytree
 
 ### *People:*
-- Jane Fonda
-- Jane Lynch
+- Alex Long
+- Evan Knapke
 
 ## **Links**
 
