@@ -1,4 +1,4 @@
-# Mentor Meeting on 9/30/2019
+# Mentor Meeting on MM/DD/YYYY
 
 ## Meeting Start Time
 
