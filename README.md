@@ -2,7 +2,7 @@
 
 ## **Summary**
 
-Put a very high-level summary of the project.
+The RothScope project is made for use by Moneytree; it uses their calculation engine to extrapolate optimal outcomes when converting tax-deferred retirement fund accounts into a Roth account. It will include features to run tax calculations based on client information, minimize cumulative taxes, maximize ending total assets, and calculate optimal outputs based on input parameters. This tool will be incorporated into Moneytree software for financial advisors to use to help their clients.
 
 ## **Team Members**
 
