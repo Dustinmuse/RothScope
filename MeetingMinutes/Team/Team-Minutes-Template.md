@@ -1,4 +1,4 @@
-# Week of 9/30/2019 - 10/6/2019
+# Week of MM/DD/YYYY - MM/DD/YYYY
 
 ## Meeting Start Time
 
