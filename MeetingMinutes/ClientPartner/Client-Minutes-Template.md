@@ -1,4 +1,4 @@
-# Client Meeting on 9/30/2019
+# Client Meeting on MM/DD/YYYY
 
 ## Meeting Start Time
 
