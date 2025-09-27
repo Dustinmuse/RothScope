@@ -1,3 +1,4 @@
 # Design
 
-Design documents here... Explain each folder/file in this readme file.
+BusinessRequirements.md details the business requirements of this project.
+UseCases.md highlights the necessary actors and use cases for the new calculation tool.
