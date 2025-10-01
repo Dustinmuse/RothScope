@@ -27,23 +27,4 @@ This ensures the project delivers immediate value and creates the base for later
 ## Project Management Setup
 Cards for each of the above requirements should be created in the **To Do** column of the GitHub Project board.  
 
-Example project board link format:  
-🔗 https://github.com/{teamMemberName}/{projectName}/projects/1  
-
-### Example Cards
-- `FR1 – Enter basic client parameters`  
-- `FR2 – Enter current asset balances`  
-- `FR3 – Enter expected asset performance`  
-- `FR4 – Perform baseline tax calculation`  
-- `FR5 – Display baseline tax results`  
-- `NR2 – Implement encryption for sensitive data`  
-- `NR4 – User-friendly forms with validation`  
-
 ---
-
-## README Update
-In your main repository’s `README.md`, under the **Links** section, add the link to your project board:
-
-```markdown
-## Links
-- [Project Board – Iteration 1](https://github.com/{teamMemberName}/{projectName}/projects/1)
