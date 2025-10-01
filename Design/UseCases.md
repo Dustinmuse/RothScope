@@ -24,7 +24,7 @@ Independent Users
 ## Use Cases
 
 UC1 - Running Tool for Optimal Roth Conversion
-- This is the main use of this new tool; users input/load their data into the tool and select a desired optimization strategy in order to gain insight on how to achieve the optimal finanical outcomes. 
+- This is the main use of this new tool; users input/load their data into the tool and select a desired optimization strategy in order to gain insight on how to achieve the optimal financial outcomes. 
 - Actors: The Roth Optimization Tool, Financial Advisors/Planner, Independent Users
 - Flow: Open application, input/load information, set desired optimization strategy, run calculation
 - BR1
