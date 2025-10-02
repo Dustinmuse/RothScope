@@ -12,8 +12,8 @@
 
 ## Non-Functional Requirements (NRs)
 
-- **NR2 (HIGH, UC1–UC6):** The system shall encrypt sensitive financial data both in transit (TLS 1.2+) and at rest.  
-- **NR4 (HIGH, UC1–UC6):** The system shall present all input forms and outputs in a clear, user-friendly interface with error validation.  
+- **NR2 (HIGH, UC1–UC5):** The system shall encrypt sensitive financial data both in transit (TLS 1.2+) and at rest.  
+- **NR4 (HIGH, UC1–UC5):** The system shall present all input forms and outputs in a clear, user-friendly interface with error validation.  
 
 ---
 
