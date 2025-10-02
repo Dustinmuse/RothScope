@@ -21,11 +21,6 @@
 - **FR10 (HIGH, UC5):** The system shall determine the optimal Roth conversion strategy according to user-defined objectives.  
 - **FR11 (MEDIUM, UC5):** The system shall allow the user to compare the optimal strategy with alternative strategies.  
 
-### Group 5: Reporting and Output
-- **FR12 (HIGH, UC6):** The system shall generate a report summarizing the optimal Roth conversion strategy, including projected tax impact and asset balances.  
-- **FR13 (MEDIUM, UC6):** The system shall allow exporting results in PDF format.  
-- **FR14 (LOW, UC6):** The system shall allow exporting results in CSV format for further analysis.  
-
 ---
 
 ## Non-functional Requirements
@@ -34,23 +29,19 @@
 - **NR1 (HIGH, UC5):** The system shall compute and return optimization results within 10 seconds for typical client datasets.  
 
 ### Security
-- **NR2 (HIGH, UC1–UC6):** The system shall encrypt sensitive financial data both in transit (TLS 1.2 or higher) and at rest.  
-- **NR3 (HIGH, UC1–UC6):** The system shall enforce role-based access control to restrict sensitive financial information.  
+- **NR2 (HIGH, UC1–UC5):** The system shall encrypt sensitive financial data both in transit (TLS 1.2 or higher) and at rest.  
+- **NR3 (HIGH, UC1–UC5):** The system shall enforce role-based access control to restrict sensitive financial information.  
 
 ### Usability
-- **NR4 (HIGH, UC1–UC6):** The system shall present all input forms and outputs in a clear, user-friendly interface with error validation.  
-- **NR5 (MEDIUM, UC6):** The system shall provide tooltips and help documentation to guide new users.  
+- **NR4 (HIGH, UC1–UC5):** The system shall present all input forms and outputs in a clear, user-friendly interface with error validation.  
 
 ### Reliability & Availability
-- **NR6 (HIGH, UC1–UC6):** The system shall maintain 99.5% uptime during business hours (Mon–Fri, 8 AM–6 PM EST).  
-- **NR7 (HIGH, UC5–UC6):** The system shall automatically save user progress every 2 minutes to prevent data loss.  
+- **NR6 (HIGH, UC1–UC5):** The system shall maintain 99.5% uptime during business hours (Mon–Fri, 8 AM–6 PM EST).  
+- **NR7 (HIGH, UC5):** The system shall automatically save user progress every 2 minutes to prevent data loss.  
 
 ### Compatibility
-- **NR8 (MEDIUM, UC1–UC6):** The system shall be compatible with the latest versions of Chrome, Firefox, and Edge browsers.  
-- **NR9 (LOW, UC1–UC6):** The system shall provide limited functionality on mobile devices for report viewing only.  
+- **NR8 (MEDIUM, UC1–UC5):** The system shall be compatible with the latest versions of Chrome, Firefox, and Edge browsers.  
 
 ### Maintainability
-- **NR10 (MEDIUM, UC1–UC6):** The system shall be implemented using modular architecture to facilitate future enhancements.  
-- **NR11 (MEDIUM, UC1–UC6):** The system shall include automated unit and integration tests covering at least 80% of the codebase.  
-
----
+- **NR10 (MEDIUM, UC1–UC5):** The system shall be implemented using modular architecture to facilitate future enhancements.  
+- **NR11 (MEDIUM, UC1–UC5):** The system shall include automated unit and integration tests covering at least 80% of the codebase.  
