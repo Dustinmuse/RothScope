@@ -11,8 +11,8 @@ Currently under the assumption of Windows
 ## Set up
 ### .NET Framework
 1. Visit https://dotnet.microsoft.com/en-us/download
-2. Download version 9.0
-   <img width="1788" height="882" alt="download_net" src="https://github.com/user-attachments/assets/460ac548-402f-4b2a-bda2-97ea05d9e4a6" />
+2. Download .NET 8.0
+  <img width="1812" height="887" alt="download_net" src="https://github.com/user-attachments/assets/ea6fbea6-3edf-42c4-8e1e-b31e7a6a7658" />
 3. Run the exe installer and follow the prompts
 
 ### Vue.js
