@@ -85,4 +85,27 @@ Currently under the assumption of Windows
 
 4. If this is your first time running it, currently select 'Forget Password' and input your given account details. This should send an email which will allow you to set a password. You can then log in and you will be able to interact with the web page.
 
+# Structuring
+## Templates
+### spa-template-vue
+This folder displays the front end and holds the UI/UX. It uses Vue.js. This is where you would edit if you wanted to create more pages, create buttons for new interactions, etc.
+### Spa.Template.Web
+This folder is the set up for the BFF (Backend-For-Frontend) and allows communication between the API and the Front Dnd. This is most likely not where you will edit. 
+### Spa.Template.Api
+This folder holds the API endpoints that our Front End calls. This is where the majority of the Back End is hosted.
+### Spa.Template.Core
+This holds mostly entities and enums.
+### Spa.Template.Infrastructure
+This is where our API goes to interact with MoneyTree's API. You would edit here if you wanted to make a new API call to MoneyTree.
+### Spa.Template.Infrastructure.Migrations
+Currently, nothing is in there.
+## Important Configs and Env's
+### src/Spa.Template.Api/appsettings.json
+This currently holds the MoneyTree url as well as your password and username for accessing their API.
+### .env
+This holds a lot of the paths to important variables. The only thing not found in here, besides the appsettings.json for API, are the launch settings for BFF pages (API and Web).
+### src/Spa.Template.Web/launchsettings.json & src/Spa.Template.Api/launchsettings.json
+Not typically edited. Holds the launch settings, specifically the URL.
    
+# Testing
+We do not currently have automated testing. The way that we test is by running through the web page since every part of the program is touched. The web page is very linear, so if you want to test something it is fairly straightforward. If you open F12, you can see what you enter and the response you get back whenever you click a button. If you do not send out a response when clicking a button, there is an issue with your front end. If you send out a response, and you get an error back, there is something wrong with either the API endpoint you're calling, src/Spa.Template.Api/Program.cs, or src/Spa.Template.Infrastructure/MoneytreeService. Beyond that, there isn't much to interpret.
