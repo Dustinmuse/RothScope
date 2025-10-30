@@ -27,6 +27,7 @@ Moneytree
 - [Team meeting minutes](MeetingMinutes/Team)
 - [Mentor meeting minutes](MeetingMinutes/Mentor)
 - [Client partner meeting minutes](MeetingMinutes/ClientPartner)
+- [Jira Workspace](https://rothscope.atlassian.net/jira/software/projects/KAN/boards/1)
 - ... any other documents/links you see need
 
 ## **Code Repositories**
