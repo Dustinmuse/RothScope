@@ -109,3 +109,51 @@ Not typically edited. Holds the launch settings, specifically the URL.
    
 # Testing
 We do not currently have automated testing. The way that we test is by running through the web page since every part of the program is touched. The web page is very linear, so if you want to test something it is fairly straightforward. If you open F12, you can see what you enter and the response you get back whenever you click a button. If you do not send out a response when clicking a button, there is an issue with your front end. If you send out a response, and you get an error back, there is something wrong with either the API endpoint you're calling, src/Spa.Template.Api/Program.cs, or src/Spa.Template.Infrastructure/MoneytreeService. Beyond that, there isn't much to interpret.
+
+# Replicating via Docker
+## Install Prerequisites
+1. Visit https://www.docker.com/products/docker-desktop/
+2. Download Docker Desktop with your corresponding system and architecture
+3. Run the exe installer
+4. Select WSL when prompted, otherwise go through traditional prompts
+
+## Clone Repos
+1. Go into your bitbucket account, into the bsu.rothscope repo, and hit 'Clone'. This will give you a command.
+2. Go into your text editor and input this command into the terminal
+3. When prompted to create an HTTPS certificate select yes, if not prompted
+
+    i. In your terminal run
+
+   `dotnet dev-certs https --trust`
+   
+    ii. Go to tools>scripts>Windows>Export-DevCert.ps1 and run it
+
+5. Go into your GitHub account, assuring that you're in the Accutech repo, and go to Settings>Developer Settings>Tokens (classic)
+6. Create a token ONLY selecting 'read:packages'
+7. Copy this token and create an environment variable named 'DESIGN_SYSTEM_TOKEN' and assign the env. variable your token string
+8. Then perform the following commands in your text editor terminal to install yarn
+
+   `cd src\spa-template-vue`
+   
+   `mkdir .yarn\releases`
+   
+   `Invoke-WebRequest https://repo.yarnpkg.com/4.2.2/packages/yarnpkg-cli/bin/yarn.js -OutFile .yarn\releases\yarn-4.2.2.cjs`
+10. Your local file now be set up.
+
+## Run
+Run the following command:
+
+  `docker-compose up`
+  
+A good first place to start if you have issues is to rebuild with no cache:
+
+  `docker-compose build --no-cache`
+
+## Browse
+1. Go to https://localhost:7777
+2. Log in to Cheetah OAuth
+3. Select the user 'Allen Abbett'
+4. Select the scenario 'Retire 63/62 - Downsize & Move to WA'
+5. Select the optimization 'Maximize Capital' and 'Next'
+6. If you see a text box containing a strategy, tables, and highlighted numbers then everything is working.
+
