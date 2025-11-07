@@ -71,7 +71,7 @@ Currently under the assumption of Windows
    `mkdir .yarn\releases`
    
    `Invoke-WebRequest https://repo.yarnpkg.com/4.2.2/packages/yarnpkg-cli/bin/yarn.js -OutFile .yarn\releases\yarn-4.2.2.cjs`
-10. Your local file now be set up.
+9. Your local file now be set up.
 
 # Running program
 1. In your terminal run `docker compose build`, this should have a LOT of things running in the terminal
@@ -127,18 +127,14 @@ We do not currently have automated testing. The way that we test is by running t
    `dotnet dev-certs https --trust`
    
     ii. Go to tools>scripts>Windows>Export-DevCert.ps1 and run it
-
-5. Go into your GitHub account, assuring that you're in the Accutech repo, and go to Settings>Developer Settings>Tokens (classic)
-6. Create a token ONLY selecting 'read:packages'
-7. Copy this token and create an environment variable named 'DESIGN_SYSTEM_TOKEN' and assign the env. variable your token string
-8. Then perform the following commands in your text editor terminal to install yarn
+4. Then perform the following commands in your text editor terminal to install yarn
 
    `cd src\spa-template-vue`
    
    `mkdir .yarn\releases`
    
    `Invoke-WebRequest https://repo.yarnpkg.com/4.2.2/packages/yarnpkg-cli/bin/yarn.js -OutFile .yarn\releases\yarn-4.2.2.cjs`
-10. Your local file now be set up.
+5. Your local file now be set up.
 
 ## Run
 Run the following command:
