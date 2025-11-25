@@ -1,36 +1,28 @@
-##Nov. 6 Workshop
+# Nov. 25 Workshop
 
-#Meeting Start Time
-
+## Meeting Start Time
 2025/11/25/11:00
-Meeting End Time
 
+## Meeting End Time
 2025/11/25/12:30
-Location/Medium
 
+## Location/Medium
 Zoom
-Present
 
-Dustin, Noah
-Minute Recorder
+## Present
+Dustin, Noah, Alli
 
-Noah
-Topics Discussed
+## Minute Recorder
+Alli
 
-Apexcharts as Graphic Library, graphs will be located in front end
+## Topics Discussed
+What is left on our checklist, client creation progress
 
-Noah to do Docker assignment
+## Topics Clarified
 
-Client creation steps
-Topics Clarified
-
-Polish graphs
+Our progress
 
 Client creation
-Progress Made
 
-Created several graphs
-
-Docker assignment submitted
-
-Client creation steps laid out
+## Progress Made
+We began the workflow for client creation and are mapping out what the API expects
