@@ -1,3 +1,6 @@
+# Update as of Iteration 2
+Client still wants it local as of the submission of Iteration 2.
+
 ## Requirements:
 ### Server:
 Currently local as client doesn't want it hosted, but if you were to host it you would at a minimum:
