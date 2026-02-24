@@ -1,32 +1,43 @@
 ## User
-You will need to follow Development.md for initial set up.
+Upon following the Development set up, you can run ```.\dockerRun.ps1``` and access the application at https://localhost:7777.
 
-Assuming this, you will go to src/Spa.Template.Api/appsettings.json and input your username and password:
-<img width="1446" height="827" alt="insert_credentials" src="https://github.com/user-attachments/assets/c0ff46a5-a13c-4f85-baf8-782c9c7c8092" />
+When you access the application, you will be prompted to log in.
+<img width="1902" height="966" alt="rothscope_1" src="https://github.com/user-attachments/assets/a97bcc8f-415a-4845-9ccd-cd7b5bc39d8f" />
 
-After this, you can run the following comamnds to set up the webpage at https://localhost:7000
-1. ```docker compose build```
-2. ```docker compose up```
+After logging in, you will be brought to the client home page. From here, you can either select a current client or create a new one.
+<img width="1903" height="958" alt="rothscope_2" src="https://github.com/user-attachments/assets/aa06a90f-5b78-4196-9923-040f8361800f" />
 
-On this webpage, you will be prompted to sign into Cheetah:
-<img width="1808" height="904" alt="Screenshot 2025-10-29 215745" src="https://github.com/user-attachments/assets/fd0895b6-a2f0-44ab-9aea-167f57fa8b64" />
+Suppose you want to create a client. So you click on the button, and then you are brought to this page wherein you would fill out your client's information.
+<img width="1897" height="960" alt="rothscope_3" src="https://github.com/user-attachments/assets/186a7148-5bd4-4ab3-bd9c-1375e35d1dfc" />
 
-After signing in, you will be brought to the homepage where it will automatically load your clients as such:
-<img width="1918" height="912" alt="client_frontpage" src="https://github.com/user-attachments/assets/93afd061-3859-4991-8872-cf09eb32d569" />
+Going back to the client list page, we select Allen Abbot. We are then brought to Allen's Scenario view page. From here, you can either slect an existing scenario or create a new one.
+<img width="1918" height="968" alt="rothscope_4" src="https://github.com/user-attachments/assets/8f63357e-51ec-4dc5-94c6-12f60376b004" />
 
-From here, you can create a client if you so choose:
-<img width="1897" height="908" alt="create_client" src="https://github.com/user-attachments/assets/ac338ef1-7a8b-49d3-98f8-8d623ca3e3c6" />
+Suppose you want to create a new sscenario. So you click on the button, and then you are brought to a page for naming your scenario.
+<img width="1918" height="912" alt="rothscope_5" src="https://github.com/user-attachments/assets/ee630484-302e-4818-a41e-54d078925e96" />
 
-Going back to the home page...
+Upon naming and clicking "Create Scenario", you are brought to a page wherein you will fill out the assumptions of said scenario.
+<img width="1917" height="917" alt="rothscope_6" src="https://github.com/user-attachments/assets/0bae8d7e-fdb9-4fc9-9fdc-8627c313d3e3" />
 
-Clicking a client will bring you to said client's scenarios:
-<img width="1918" height="911" alt="scenario_select" src="https://github.com/user-attachments/assets/9c8a3343-a02b-44a1-b33c-1a6938ab2b79" />
+When you complete that, you will be brought to the assets page of your specific scenario.
+<img width="1898" height="967" alt="rothscope_7" src="https://github.com/user-attachments/assets/987745e3-280e-47d0-b2f2-65e3bb06cb5a" />
 
-Clicking a scenario will allow you to run an optimization on that scenario, you will select what parameters you would like to enter, but you are limited to 2.
-<img width="1898" height="907" alt="optimization_entry" src="https://github.com/user-attachments/assets/763cf229-e721-4aca-af36-2a5d9c88b303" />
+This is what it looks like when you create an asset.
+<img width="1896" height="907" alt="rothscope_8" src="https://github.com/user-attachments/assets/1e9ea3b4-9d6e-400b-95cf-af2df47d3fec" />
+
+When you are all finished, you will be at the same point as if you had selected an existing scenario---the optimization screen. Here, you set different parameters to convert your assets.
+<img width="1901" height="961" alt="rothscope_9" src="https://github.com/user-attachments/assets/7a1bd7ad-8405-47c9-91f8-56254b79034e" />
+
+When you run the given scenario, you will have a long page filled with information.
+  - From the stats that you end up with
+  <img width="1900" height="960" alt="rothscope_11" src="https://github.com/user-attachments/assets/3ddfd502-ece1-4b4a-8b18-942a076bb30d" />
 
 
-Upon selection of next, it will run the optimization and tell you what is recommended, as well as the numbers behind it (with graphs and warnings!):
-<img width="1897" height="907" alt="optimization_results_1" src="https://github.com/user-attachments/assets/f139503d-f775-404e-b0e0-0d4d37812b64" />
-<img width="1902" height="908" alt="optimization_results_2" src="https://github.com/user-attachments/assets/3bc1d3c3-185f-4431-8295-4979c0244bdd" />
+- To a graph depicting your conversion and what would happen if you didn't convert
+  <img width="1901" height="905" alt="rothscope_12" src="https://github.com/user-attachments/assets/c21d6a64-7b69-4b3d-b0a6-f86ab0a1c965" />
 
+
+- And finally, you have your year-by-year breakdown
+  <img width="1897" height="913" alt="rothscope_13" src="https://github.com/user-attachments/assets/212c406e-3e90-4cc9-bef9-6a6dc5f106d9" />
+
+To end with, you can scroll back up and hit the "Export PDF" button to download the Optimization's results.
