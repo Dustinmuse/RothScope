@@ -1,4 +1,4 @@
-# Update as of Iteration 2
+# Update as of Iteration 3
 Client still wants it local as of the submission of Iteration 2.
 
 ## Requirements:
@@ -14,9 +14,7 @@ They should be grouped together as downloaded. Specifically, do not move files o
 ### Start/Stop System:
 In your terminal for your text editor, type 
 
-```docker compose build```
-
-```docker compose up```
+```.\dockerRun.ps1```
 
 It will then run on Docker Desktop, which you can stop by going into Docker Desktop and clicking the stop button on the container. 
 
