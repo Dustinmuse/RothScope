@@ -36,7 +36,9 @@ When you run the given scenario, you will have a long page filled with informati
 - To a graph depicting your conversion and what would happen if you didn't convert
   <img width="1901" height="905" alt="rothscope_12" src="https://github.com/user-attachments/assets/c21d6a64-7b69-4b3d-b0a6-f86ab0a1c965" />
 
-
+- A notes section for the advisor to add notes for the PDF export
+  <img width="1255" height="418" alt="Screenshot 2026-03-17 at 8 22 19 PM" src="https://github.com/user-attachments/assets/5f66b4a7-4e22-41a8-aaef-b91bd466e9e7" />
+  
 - And finally, you have your year-by-year breakdown
   <img width="1897" height="913" alt="rothscope_13" src="https://github.com/user-attachments/assets/212c406e-3e90-4cc9-bef9-6a6dc5f106d9" />
 
