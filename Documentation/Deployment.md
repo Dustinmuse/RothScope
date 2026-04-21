@@ -1,5 +1,5 @@
-# Update as of Iteration 3
-Client still wants it local as of the submission of Iteration 2.
+# Finalized
+Client still wants it local.
 
 ## Requirements:
 ### Server:
