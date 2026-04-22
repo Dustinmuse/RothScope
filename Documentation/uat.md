@@ -407,6 +407,9 @@ Client Accepted
 
 **Evidence:**
 
+<img width="1177" height="532" alt="workflow_1" src="https://github.com/user-attachments/assets/6a092420-d50a-4de0-8bb2-1cf8a69f9d54" />
+
+
 ### Scenario 2: Error Handling
 
 **Given:**
@@ -427,6 +430,9 @@ Internal Passed
 
 **Evidence:**
 
+<img width="1898" height="838" alt="workflow_2" src="https://github.com/user-attachments/assets/1be6c72e-38bb-4121-9754-8444563ffb22" />
+
+
 ### Scenario 3: Edge Case
 
 **Given:**
@@ -446,6 +452,8 @@ The system handles the interruption safely: partial changes are not applied, the
 Internal Passed
 
 **Evidence:**
+
+<img width="1897" height="835" alt="workflow_3" src="https://github.com/user-attachments/assets/9bdbc6dd-a561-4f75-9fbd-a9060393e0a7" />
 
 ---
 
