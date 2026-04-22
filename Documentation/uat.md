@@ -6,15 +6,18 @@
 
 # 1. Feature Overview
 
-| Feature           | Priority | Iteration | Client Facing (Y/N) |
-| ----------------- | -------- | --------- | ------------------- |
-| Client Creation   | High     | 2         | Y                   |
-| Scenario Creation | High     | 2         | Y                   |
-| Asset Creation    | High     | 2         | Y                   |
-| Assumption Creation | High   | 3         | Y                   |
-| Calculations      | High     | 4         | Y                   |
-| Advisors          | Low      |           | N                   |
-
+| Feature               | Priority | Iteration | Client Facing (Y/N) |
+| --------------------- | -------- | --------- | ------------------- |
+| Client Creation       | High     | 2         | Y                   |
+| Scenario Creation     | High     | 2         | Y                   |
+| Asset Creation        | High     | 2         | Y                   |
+| Assumption Creation   | High     | 3         | Y                   |
+| Calculations          | High     | 4         | Y                   |
+| Advisors              | Low      | 4         | N                   |
+| Income                | Medium   | 4         | Y                   |
+| Optimization Workflow | High     | 5         | N                   |
+| Save Optimization     | Medium   | 4         | Y                   |
+| Login                 | Medium   | 3         | Y                   |
 
 ---
 
@@ -230,6 +233,326 @@ Internal Passed
 **Evidence:**
 
 ![Creating asset edge case image](/Documentation/UAT%20Screenshots/CreatingAssetEdgeCase.png)
+
+---
+
+## Feature: Assumption Creation
+
+### Scenario 1: Successfully creating assumptions
+
+**Given:**
+
+A general user
+
+**When:**
+
+When they create assumptions and provide a retirement age and life expectancy
+
+**Then:**
+
+The assumptions are stored in the Moneytree database and associated with the selected scenario/client
+
+**Status:** (Not Tested / Internal Passed / Client Accepted)
+
+Client Accepted
+
+**Evidence:** (link to PR, test file, video, screenshot)
+
+### Scenario 2: Error Handling
+
+**Given:**
+
+A general user
+
+**When:**
+
+When they attempt to save assumptions with required fields missing (retirement age or life expectancy)
+
+**Then:**
+
+The user receives a validation error on the UI and the assumptions are not saved
+
+**Status:**
+
+Internal Passed
+
+**Evidence:**
+
+### Scenario 3: Edge Case
+
+**Given:**
+
+A general user
+
+**When:**
+
+When they enter a retirement age that is less than the current age, or a life expectancy that is less than the retirement age
+
+**Then:**
+
+The system shows a validation error preventing save and guides the user to correct the values
+
+**Status:**
+
+Internal Passed
+
+**Evidence:**
+
+---
+
+## Feature: Save Optimization
+
+### Scenario 1: Successfully saving an optimization
+
+**Given:**
+
+A general user with a prepared scenario and valid inputs
+
+**When:**
+
+When they run a save optimization process and choose to save the optimization results with a name
+
+**Then:**
+
+The optimization completes, results are stored in the Moneytree database, and the saved optimization is associated with the selected scenario/client and visible in the UI
+
+**Status:** (Not Tested / Internal Passed / Client Accepted)
+
+Client Accepted
+
+**Evidence:** (link to PR, test file, video, screenshot)
+
+### Scenario 2: Error Handling
+
+**Given:**
+
+A general user
+
+**When:**
+
+When they attempt to save optimization results without providing a required name or required inputs
+
+**Then:**
+
+The user receives a validation error on the UI and the optimization is not saved
+
+**Status:**
+
+Internal Passed
+
+**Evidence:**
+
+### Scenario 3: Edge Case
+
+**Given:**
+
+A general user
+
+**When:**
+
+When the optimization service fails or returns partial results (e.g., timeout, server error) during save
+
+**Then:**
+
+The system shows a clear error, does not create a corrupted save, and offers retry or export of partial results; audit logs capture the failure
+
+**Status:**
+
+Internal Passed
+
+**Evidence:**
+
+---
+
+## Feature: Roth Optimization Workflow
+
+### Scenario 1: Successfully completing Roth optimization workflow
+
+**Given:**
+
+A registered user with a valid scenario, account balances, and required assumptions
+
+**When:**
+
+They start the Roth optimization workflow, provide required inputs (tax assumptions, targets), and run the workflow to completion
+
+**Then:**
+
+The workflow produces recommended conversion/optimization actions, results are saved to the Moneytree database, a report is generated, and the user can accept/apply the recommendations
+
+**Status:**
+
+Client Accepted
+
+**Evidence:**
+
+### Scenario 2: Error Handling
+
+**Given:**
+
+A registered user
+
+**When:**
+
+They run the Roth optimization workflow with missing or invalid inputs, or when business rules conflict (e.g., requested conversion exceeds available balance)
+
+**Then:**
+
+The system shows validation errors or business-rule warnings, prevents destructive actions, and does not apply recommendations until corrected
+
+**Status:**
+
+Internal Passed
+
+**Evidence:**
+
+### Scenario 3: Edge Case
+
+**Given:**
+
+A registered user
+
+**When:**
+
+The user attempts a long-running multi-step Roth optimization (multiple conversions, tax-year distribution) and the network or service is interrupted mid-process
+
+**Then:**
+
+The system handles the interruption safely: partial changes are not applied, the process can be resumed or rolled back, and the user is presented with the current workflow state and guidance
+
+**Status:**
+
+Internal Passed
+
+**Evidence:**
+
+---
+
+## Income Creation
+
+### Scenario 1: Successfully creating income
+
+**Given:**
+
+A general user
+
+**When:**
+
+When they create income with yearly income and personal income fields populated
+
+**Then:**
+
+The income entries are created and stored in the Moneytree database
+
+**Status:**
+
+Client Passed
+
+**Evidence:**
+
+### Scenario 2: Error Handling
+
+**Given:**
+
+A general user
+
+**When:**
+
+When they attempt to save income without required numeric values or with non-numeric input
+
+**Then:**
+
+The user receives a validation error on the UI and the income is not saved
+
+**Status:**
+
+Internal Tested
+
+**Evidence:**
+
+### Scenario 3: Edge Case
+
+**Given:**
+
+A general user
+
+**When:**
+
+When they enter decimal values, extremely large values, or zero/negative income
+
+**Then:**
+
+The system validates numeric ranges, rejects invalid negative values, and correctly stores valid decimals and large numbers without data corruption
+
+**Status:**
+
+Internal Tested
+
+**Evidence:**
+
+---
+
+## Feature: Login
+
+### Scenario 1: Successfully logging in
+
+**Given:**
+
+A registered user
+
+**When:**
+
+They enter valid username and password and submit the login form
+
+**Then:**
+
+They are authenticated, receive a valid session/token, and are redirected to the application dashboard
+
+**Status:**
+
+Client Accepted
+
+**Evidence:**
+
+### Scenario 2: Error Handling
+
+**Given:**
+
+Any user
+
+**When:**
+
+They submit the login form with an empty username or password, or incorrect credentials
+
+**Then:**
+
+The user receives an appropriate error message and is not authenticated
+
+**Status:**
+
+Internal Tested
+
+**Evidence:**
+
+### Scenario 3: Edge Case
+
+**Given:**
+
+Any user
+
+**When:**
+
+They enter credentials with leading/trailing whitespace, special characters, or attempt repeated invalid logins
+
+**Then:**
+
+Input is trimmed/validated, special characters are handled safely, and the system enforces rate-limiting/account lockout policies for repeated failures
+
+**Status:**
+
+Internal Tested
+
+**Evidence:**
 
 ---
 
