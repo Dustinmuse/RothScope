@@ -43,11 +43,13 @@ When you run the given scenario, you will have a long page filled with informati
 
 
 - A notes section for the advisor to add notes for the PDF export as well as a new tax graph!
-  ![Uploading advisor+tax.png…]()
+  <img width="1902" height="907" alt="advisor+tax" src="https://github.com/user-attachments/assets/eb654750-575e-495e-9b6d-96659a138f86" />
+
 
   
 - And finally, you have your year-by-year breakdown
   <img width="1898" height="907" alt="new-5" src="https://github.com/user-attachments/assets/91e0a4e1-e4eb-478c-adb9-f24bf8e7212e" />
+
 <img width="1900" height="907" alt="new_6" src="https://github.com/user-attachments/assets/07ac2a15-7928-43e4-9ef0-6f53e1391e9d" />
 
 
