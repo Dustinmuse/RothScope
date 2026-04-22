@@ -256,7 +256,12 @@ The assumptions are stored in the Moneytree database and associated with the sel
 
 Client Accepted
 
-**Evidence:** (link to PR, test file, video, screenshot)
+**Evidence:**
+
+<img width="1408" height="837" alt="scenario_creation_1" src="https://github.com/user-attachments/assets/1b11c421-14a2-4e3b-b0db-aae690615c20" />
+
+<img width="1412" height="837" alt="scenario_creation_1_2" src="https://github.com/user-attachments/assets/e7a1beb3-3c83-49ff-9a7a-9f704730e6e6" />
+
 
 ### Scenario 2: Error Handling
 
@@ -277,6 +282,9 @@ The user receives a validation error on the UI and the assumptions are not saved
 Internal Passed
 
 **Evidence:**
+
+<img width="1410" height="837" alt="assumption_creation_2" src="https://github.com/user-attachments/assets/2acbb325-39fb-4287-950a-d1beccd83c5e" />
+
 
 ### Scenario 3: Edge Case
 
@@ -300,6 +308,9 @@ Internal Passed
 
 ---
 
+<img width="1410" height="840" alt="assumption_creation_3" src="https://github.com/user-attachments/assets/69bf07f0-5232-4795-87ff-3c4cd7428fb8" />
+
+
 ## Feature: Save Optimization
 
 ### Scenario 1: Successfully saving an optimization
@@ -320,7 +331,14 @@ The optimization completes, results are stored in the Moneytree database, and th
 
 Client Accepted
 
-**Evidence:** (link to PR, test file, video, screenshot)
+**Evidence:** 
+
+<img width="1918" height="837" alt="saving_1" src="https://github.com/user-attachments/assets/df90446f-320e-4ceb-a91e-edc8a5579b04" />
+
+<img width="1917" height="837" alt="saving_1_2" src="https://github.com/user-attachments/assets/22c78d27-e2ef-458e-8caf-93140cc4600f" />
+
+<img width="1918" height="840" alt="saving_2" src="https://github.com/user-attachments/assets/1c5627df-efa3-4ec5-8e57-26d210cb2c8b" />
+
 
 ### Scenario 2: Error Handling
 
@@ -361,6 +379,9 @@ The system shows a clear error, does not create a corrupted save, and offers ret
 Internal Passed
 
 **Evidence:**
+
+<img width="1918" height="836" alt="saving_3" src="https://github.com/user-attachments/assets/4d02a550-2881-4f0d-b8fb-8f4e77526ae1" />
+
 
 ---
 
@@ -450,6 +471,11 @@ Client Passed
 
 **Evidence:**
 
+<img width="1903" height="841" alt="income_1" src="https://github.com/user-attachments/assets/8b9c60e3-fa73-4298-860d-ffde8de23039" />
+
+<img width="1900" height="843" alt="income_1_2" src="https://github.com/user-attachments/assets/7e9456e6-a534-411f-a5c0-3213406afbcb" />
+
+
 ### Scenario 2: Error Handling
 
 **Given:**
@@ -470,6 +496,9 @@ Internal Tested
 
 **Evidence:**
 
+<img width="1901" height="837" alt="income_2" src="https://github.com/user-attachments/assets/d8a93942-c808-4677-8650-7df839d72094" />
+
+
 ### Scenario 3: Edge Case
 
 **Given:**
@@ -489,6 +518,8 @@ The system validates numeric ranges, rejects invalid negative values, and correc
 Internal Tested
 
 **Evidence:**
+
+<img width="1897" height="841" alt="income_3" src="https://github.com/user-attachments/assets/f0d4ade8-e95d-4b74-ad1d-c3837dc066aa" />
 
 ---
 
@@ -514,6 +545,11 @@ Client Accepted
 
 **Evidence:**
 
+<img width="1901" height="837" alt="login_1" src="https://github.com/user-attachments/assets/93ec37e4-8dc9-4bd5-a301-b00124841c49" />
+
+<img width="1913" height="861" alt="login_1_2" src="https://github.com/user-attachments/assets/a28e2256-84a6-4fbf-bf45-0c7143f852b8" />
+
+
 ### Scenario 2: Error Handling
 
 **Given:**
@@ -534,6 +570,9 @@ Internal Tested
 
 **Evidence:**
 
+<img width="1900" height="833" alt="login_2" src="https://github.com/user-attachments/assets/83ceabb5-4b47-404b-b1a3-75a412e7a7a6" />
+
+
 ### Scenario 3: Edge Case
 
 **Given:**
@@ -553,6 +592,9 @@ Input is trimmed/validated, special characters are handled safely, and the syste
 Internal Tested
 
 **Evidence:**
+
+<img width="1900" height="838" alt="login_2" src="https://github.com/user-attachments/assets/6953bfae-ceaa-4b15-8925-0aeb4723ec29" />
+
 
 ---
 
