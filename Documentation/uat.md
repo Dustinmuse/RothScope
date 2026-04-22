@@ -1,6 +1,6 @@
 # User Acceptance Testing (UAT)
 
-## Last Updated: 2026-02-24
+## Last Updated: 2026-04-21
 
 ---
 
@@ -11,6 +11,10 @@
 | Client Creation   | High     | 2         | Y                   |
 | Scenario Creation | High     | 2         | Y                   |
 | Asset Creation    | High     | 2         | Y                   |
+| Assumption Creation | High   | 3         | Y                   |
+| Calculations      | High     | 4         | Y                   |
+| Advisors          | Low      |           | N                   |
+
 
 ---
 
