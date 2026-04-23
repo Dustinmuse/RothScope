@@ -18,7 +18,8 @@
 | Optimization Workflow | High     | 5         | N                   |
 | Save Optimization     | Medium   | 4         | Y                   |
 | Login                 | Medium   | 3         | Y                   |
-
+| Favorites             | Low      | 5         | Y                   |
+| CSV Export            | Low      | 5         | Y                   |
 ---
 
 # 2. Acceptance Scenarios
@@ -603,8 +604,143 @@ Internal Tested
 
 <img width="1900" height="838" alt="login_2" src="https://github.com/user-attachments/assets/6953bfae-ceaa-4b15-8925-0aeb4723ec29" />
 
+⏺ ## Feature: CSV Export
+
+  ### Scenario 1: Successfully exporting optimization results to CSV
+
+  **Given:**
+
+  A general user who has completed a Roth optimization and is viewing the results page
+
+  **When:**
+
+  They click the "Export CSV" button in the results navbar
+
+  **Then:**
+
+  A CSV file named `roth-optimization-results.csv` is downloaded containing the full year-by-year projection table
+  with columns for Year, Age, Conversion Amount, Conversion Tax, Cumulative Tax Paid, Marginal Tax Rate,
+  Tax-Deferred Balance, Roth Balance, Total Capital, and Conversion Year
+
+  **Status:** Internal Tested
+
+  **Evidence:**
+  <img width="1486" height="860" alt="Screenshot 2026-04-23 at 3 49 13 PM" src="https://github.com/user-attachments/assets/6bb53c70-9cc9-418e-bb72-2c9948c37138" />
+
+
+  ---
+
+  ### Scenario 2: Error Handling
+
+  **Given:**
+
+  A general user viewing optimization results with no yearly detail data (e.g. empty or failed optimization)
+
+  **When:**
+
+  They attempt to click the "Export CSV" button
+
+  **Then:**
+
+  The button is disabled and no file is downloaded, preventing the user from exporting an empty or incomplete CSV
+
+  **Status:** Not Tested
+
+  **Evidence:**
+
+  ---
+
+  ### Scenario 3: Edge Case
+
+  **Given:**
+
+  A general user viewing optimization results that include baseline capital and baseline tax data from the Moneytree
+   API
+
+  **When:**
+
+  They click the "Export CSV" button
+
+  **Then:**
+
+  The CSV dynamically includes additional columns (Baseline Capital, Baseline Total Taxes, Federal Tax, State Tax,
+  FICA/HI Tax) only when that data is available, and omits them when absent, so the exported file accurately
+  reflects what is displayed in the UI table
+
+  **Status:** Not Tested
+
+  **Evidence:**
 
 ---
+⏺ ## Feature: Client Favorites
+
+  ### Scenario 1: Successfully favoriting a client for quick access
+
+  **Given:**
+
+  A general user viewing the client list on the home page
+
+  **When:**
+
+  They click the star icon on a client row
+
+  **Then:**
+
+  The client is added to favorites, a "Favorites" section appears at the top of the page displaying the favorited
+  client, and the star icon fills in to indicate the active favorite state
+
+  **Status:** Internal Tested
+
+
+  **Evidence:**
+<img width="1499" height="746" alt="Screenshot 2026-04-23 at 3 51 39 PM" src="https://github.com/user-attachments/assets/7a8328b4-8d21-47a8-91f8-f572c49ffe0b" />
+
+  ---
+
+  ### Scenario 2: Error Handling
+
+  **Given:**
+
+  A general user with favorited clients whose session has expired
+
+  **When:**
+
+  They return to the home page
+
+  **Then:**
+
+  The backend returns a 401 status, the client list fails to load, and the user is prompted to log in again;
+  favorites stored in localStorage are preserved and will display once the user re-authenticates and the client list
+   reloads
+
+  **Status:** Internal Tested
+
+  **Evidence:**
+<img width="1509" height="750" alt="Screenshot 2026-04-23 at 3 52 16 PM" src="https://github.com/user-attachments/assets/b77df36c-4be5-48b4-b0f7-330649204c55" />
+
+  ---
+
+  ### Scenario 3: Edge Case
+
+  **Given:**
+
+  A general user with multiple favorited clients who uses the search bar
+
+  **When:**
+
+  They type a search query that matches some but not all favorited clients
+
+  **Then:**
+
+  Both the Favorites section and the All Clients list filter correctly to show only matching results; the Favorites
+  section hides entirely if no favorited clients match the search, and reappears when the search is cleared
+
+  **Status:** Internal Tested
+
+  **Evidence:**
+<img width="1502" height="749" alt="Screenshot 2026-04-23 at 3 53 19 PM" src="https://github.com/user-attachments/assets/ccd00d08-9093-4003-a05a-6d47e9f8afe7" />
+
+  ---
 
 # 3. Client UAT Log
 
