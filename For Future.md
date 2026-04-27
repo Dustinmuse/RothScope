@@ -12,4 +12,4 @@ This is for the future developers who may work on this project. This shows all t
 
 - Add more/better exception handling during the optimization process
 
--
+- Add a sorting for the client's and scenario's list
