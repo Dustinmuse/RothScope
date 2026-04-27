@@ -8,16 +8,17 @@ The RothScope project is made for use by Moneytree; it uses their calculation en
 
 - Alli Carr
 - Dustin Muse
-- Gabe Manning
-- Jaydon Buckler
 - Noah King
+- Caige Rogers
 
 ## **Client Partner Information**
 
-### *Company:*
+### _Company:_
+
 Moneytree
 
-### *People:*
+### _People:_
+
 - Alex Long
 - Evan Knapke
 
@@ -28,11 +29,7 @@ Moneytree
 - [Mentor meeting minutes](MeetingMinutes/Mentor)
 - [Client partner meeting minutes](MeetingMinutes/ClientPartner)
 - [Jira Workspace](https://rothscope.atlassian.net/jira/software/projects/KAN/boards/1)
-- ... any other documents/links you see need
 
 ## **Code Repositories**
 
-- [Mobile App - Android](https://www.github.com/WHEREEVER_THE_ANDROID_CODE_IS/)
-- [Php Backend](https://www.github.com/WHEREEVER_THE_PHP_CODE_IS)
-- Others if more.
-
+- [Bitbucket Source Code](https://bitbucket.org/accutechcapstone/bsu.rothscope/src/master/)
