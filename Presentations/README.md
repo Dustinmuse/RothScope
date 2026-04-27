@@ -5,7 +5,4 @@ Any presentation you made will be put here right after the presentation. The fol
 - Design Presentation
 - First Iteration Presentation
 - Second Iteration Presentation
-- Third Iteration Presentation
-- Fourth Iteration Presentation
-- Fifth Iteration Presentation
-- Final Presentation
+- Final Iteration Poster
