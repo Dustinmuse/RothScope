@@ -2,4 +2,8 @@ For development: https://github.com/Dustinmuse/RothScope/blob/master/Documentati
 
 For deployment: https://github.com/Dustinmuse/RothScope/blob/master/Documentation/Deployment.md
 
-For user: https://github.com/Dustinmuse/RothScope/blob/master/Documentation/User.md
+For user:
+https://github.com/Dustinmuse/RothScope/blob/master/Documentation/User.md
+
+For UATs:
+https://github.com/Dustinmuse/RothScope/blob/master/Documentation/uat.md
